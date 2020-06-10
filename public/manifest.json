@@ -3,14 +3,9 @@
   "name": "A Personal Website",
   "icons": [
     {
-      "src": "../res/img/Icon.png",
+      "src": "../Favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "../res/img/Icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "type": "image/x-icon"
     }
   ],
   "start_url": ".",
