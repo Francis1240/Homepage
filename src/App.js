@@ -1,10 +1,10 @@
 import React from 'react';
-import homeHeader from './components/homeHeader';
+import HomeHeader from './components/HomeHeader';
 
 function App() {
   return (
     <div className="App">
-      <homeHeader />
+      <HomeHeader />
     </div>
   );
 }
