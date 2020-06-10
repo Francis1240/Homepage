@@ -1,5 +1,5 @@
 import React from 'react';
-import githublogo from '../../public/res/img/GitHub.png';
+import githublogo from '%PUBLIC_URL%/res/img/GitHub.png';
 
 
 const homeHeader = () =>{
