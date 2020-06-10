@@ -1,5 +1,5 @@
 import React from 'react';
-import githublogo from process.env.PUBLIC_URL+'/res/img/GitHub.png';
+import githublogo from '../res/img/GitHub.png'
 
 
 const homeHeader = () =>{
