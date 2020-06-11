@@ -103,13 +103,20 @@
 
 .PhotographerBackground{
     clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
+    filter: grayscale(80%);
     transition: 1s ease;
 }
 .PhotographerBackground:hover{
     clip-path: polygon(0 0, 60vw 0, 80vw 100vh, 0 100vh); 
-    
+    filter: none;
 }
-
+.ProgrammerBackground{
+    filter: grayscale(80%);
+    transition: 1s ease;
+}
+.ProgrammerBackground:hover{
+    filter: none;;
+}
 
 
 
