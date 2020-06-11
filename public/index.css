@@ -1,4 +1,99 @@
 body{
-    background-color: aliceblue;
+    background-color: gray;
     margin: 0;
 }
+
+/* HomePage */
+
+/* -------------- Header ---------------- */
+
+.HomeHeader{
+    position: fixed;
+    top: 0;
+}
+
+
+.HomeButton {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 100;
+}
+.GitHubIcon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 40px;
+}
+
+.HomepageSectionsWrapper{
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+/* Photographer */
+
+.HomePagePhotographerSection {
+    margin: 0;
+    width: fit-content;
+    max-height: 50vh;
+    position: fixed;
+    bottom: 0; left: 0;
+    overflow: hidden;
+    filter: grayscale(80%);
+    background-color: gray;
+}
+.HomePagePhotographerSection:hover{
+    filter: none;
+}
+
+.PhotographerBackground {
+  position: relative;
+  top: -600px;
+}
+
+.PhotographerTitle {
+    margin: 0;
+    position: relative;
+    top: 2vh;
+    left: calc(90vw - 800px);
+    font-family: 'Qwigley';
+    font-size: 20vh;
+    z-index: 3;
+    color: aliceblue;
+}
+
+/* SDE */
+
+.HomePageSoftwareSection {
+    margin: 0;
+    width: fit-content;
+    max-height: 50vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    filter: grayscale(80%);
+}
+
+.HomePageSoftwareSection:hover{
+    filter: none;
+}
+.ProgrammerBackground {
+    position: relative;
+    top:-50vh;
+}
+
+
+.ProgrammerTitle {
+    margin: 0;
+    font-size: 11vh;
+    color: aliceblue;
+    position: relative;
+    font-family: monospace;
+    top: calc(50vh - 200px);
+    left: 5vw;
+    z-index: 3;
+}
+
