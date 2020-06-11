@@ -11,7 +11,7 @@ const  HomeHeader = () => {
             <div className="HomeHeaderWrapper">
 
                 <div className="HomeButton">
-                    <Link to="/"><img src={HomeIcon} style={{width: '80px'}} alt="Home Button."/></Link>
+                    <Link to="/"><img src={HomeIcon} className="HomeButtonIcon" alt="Home Button."/></Link>
                 </div>
             
                 <div></div>

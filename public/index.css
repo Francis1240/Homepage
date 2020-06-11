@@ -19,6 +19,10 @@ body{
     left: 50px;
     z-index: 100;
 }
+.HomeButtonIcon{
+    width: 80px;
+}
+
 .GitHubIcon {
     position: fixed;
     top: 10px;
@@ -60,7 +64,7 @@ body{
     top: 2vh;
     left: calc(90vw - 800px);
     font-family: 'Qwigley';
-    font-size: 20vh;
+    font-size: 10vw;
     z-index: 3;
     color: aliceblue;
 }
@@ -88,7 +92,7 @@ body{
 
 .ProgrammerTitle {
     margin: 0;
-    font-size: 11vh;
+    font-size: 5.5vw;
     color: aliceblue;
     position: relative;
     font-family: monospace;
@@ -97,3 +101,51 @@ body{
     z-index: 3;
 }
 
+@media (max-width: 1900px){
+    .HomeButton {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+    }
+    .HomeButtonIcon{
+        width: 50px;
+    }
+    
+    .GitHubIcon {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        width: 40px;
+    }
+    .ProgrammerBackground {
+        position: relative;
+        top:-80vh;
+        left:-50vh;
+    }
+    .ProgrammerTitle {
+        margin: 0;
+        font-size: 22pt;
+        color: aliceblue;
+        position: relative;
+        font-family: monospace;
+        top: calc(50vh - 160px);
+        left: 20px;
+        z-index: 3;
+    }
+    .PhotographerBackground {
+        position: relative;
+        top: -500px;
+    }
+    .PhotographerTitle {
+        margin: 0;
+        position: relative;
+        top: 2vh;
+        left: 20px;
+        font-family: 'Qwigley';
+        font-size: 40pt;
+        z-index: 3;
+        color: aliceblue;
+    }
+}
