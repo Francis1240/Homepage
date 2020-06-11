@@ -1,0 +1,115 @@
+/* Headers */
+
+.HomeHeader{
+    position: fixed;
+    top: 0;
+}
+
+
+.HomeButton {
+    position: fixed;
+    top: 5vmin;
+    left: 5vmin;
+    z-index: 100;
+}
+.HomeButtonIcon{
+    width: 6vmin;
+}
+.HomepageTitle{
+    margin:0;
+    font-family: 'Passion One', cursive;
+    font-size: 5vw;
+    color: white;
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    z-index: 100;
+}
+.GitHubIcon {
+    position: fixed;
+    top: 1vmin;
+    right: 1vmin;
+    z-index: 100;
+    width: 4vmin;
+}
+
+
+/* Sections */
+
+/* --- basic --- */
+.HomepageSectionsWrapper{
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.HomepageSectionsWrapper{
+    overflow: hidden;
+}
+
+.HomepageSectionsWrapper div p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ProgrammerBackground{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.ProgrammerTitle{
+    pointer-events: none;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 5vw;
+    color: bisque;
+    position: absolute;
+    top: 8vh;
+    right: 5vw;
+    z-index: 12;
+}
+
+.PhotographerBackground{
+    pointer-events: visible;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.PhotographerTitle{
+    pointer-events: none;
+    display: inline-block;
+    font-family: "Qwigley";
+    font-size: 7vw;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 12vh;
+    left: 5vw;
+    z-index: 13;
+}
+
+/* --- clip and animation --- */
+
+.PhotographerBackground{
+    clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
+    transition: 1s ease;
+}
+.PhotographerBackground:hover{
+    clip-path: polygon(0 0, 60vw 0, 80vw 100vh, 0 100vh); 
+    
+}
+
+
+
+

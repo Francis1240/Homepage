@@ -1,6 +1,7 @@
 import React from 'react';
-import CodeImg from '../res/img/Code.jpeg';
+import CodeImg from '../res/img/Computer.jpg';
 import PhotoImg from '../res/img/SaintPaul.jpg';
+import { Link } from 'react-router-dom';
 
 const HomeSection = (props) =>{
 
@@ -15,11 +16,15 @@ const HomeSection = (props) =>{
         switch(props.name){
             case "Photographer":
                 return (
-                    <img className="PhotographerBackground" src={PhotoImg} alt="Saint Paul nightview" />
+                    <Link to="/photographer">
+                        <img className="PhotographerBackground" src={PhotoImg} alt="Saint Paul nightview" />
+                    </Link>
                 );
             case "SDE":
                 return (
-                    <img className="ProgrammerBackground" src={CodeImg} alt="A bunch of random code." />
+                    <Link to="/programmer">
+                        <img className="ProgrammerBackground" src={CodeImg} alt="A bunch of random code." />
+                    </Link>
                 );
             default: 
                 return <></>;

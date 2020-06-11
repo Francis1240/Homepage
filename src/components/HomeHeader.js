@@ -14,7 +14,9 @@ const  HomeHeader = () => {
                     <Link to="/"><img src={HomeIcon} className="HomeButtonIcon" alt="Home Button."/></Link>
                 </div>
             
-                <div></div>
+                <p className="HomepageTitle">
+                    Hello, I'm Yufan Ma. 
+                </p>
                 
                 <a href="https://github.com/Francis1240/Homepage">
 
