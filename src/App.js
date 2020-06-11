@@ -6,7 +6,6 @@ import './css/App.css';
 import ProgrammerPage from './pages/ProgrammerPage';
 
 
-Amplify.configure(awsconfig);
 
 const App = () => {
 
