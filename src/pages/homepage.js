@@ -1,17 +1,20 @@
 import React from 'react';
-import HomeHeader from './components/HomeHeader.js';
+import HomeHeader from '../components/HomeHeader.js';
+import HomeSection from '../components/HomeSection.js';
 
 const HomePage = () =>{
+    
     return (
         <>
         <HomeHeader />
 
         <h1 id="HomepageTitle">
-        Are you looking for...
+        
         </h1>
 
         <div id="HomepageSectionsWrapper">
-
+            <HomeSection name="Photographer"/>
+            <HomeSection name="SDE"/>
         </div>
         </>
     );
