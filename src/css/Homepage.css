@@ -3,6 +3,8 @@
 .HomeHeader{
     position: fixed;
     top: 0;
+    width: 100vw;
+
 }
 
 
@@ -56,10 +58,21 @@
     pointer-events: none;;
 }
 
-
+.HomeHeaderWrapper a p{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 6vmin;
+    top: calc(3vmin - 0.7em);
+    font-size: 2vmin;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    z-index: 100;
+}
 
 .GitHubIcon {
-    position: fixed;
+    position: absolute;
     top: 1vmin;
     right: 1vmin;
     z-index: 100;
