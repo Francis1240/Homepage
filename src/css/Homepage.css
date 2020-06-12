@@ -151,7 +151,7 @@
 
 .PhotographerBackground{
     clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
-    filter: blur(10px) ;
+    filter: blur(10px);
     transition: 0.5s ease-in-out;
 }
 .PhotographerBackground:hover{
