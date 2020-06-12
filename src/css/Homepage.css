@@ -7,6 +7,7 @@
 
 
 .HomeButton {
+    pointer-events: none;;
     position: fixed;
     top: 5vmin;
     left: 5vmin;
@@ -18,13 +19,45 @@
 .HomepageTitle{
     margin:0;
     font-family: 'Passion One', cursive;
-    font-size: 5vw;
-    color: white;
+    font-size: 4.5vw;
+    color: ivory;
     position: absolute;
-    top: 15vh;
-    left: 25vw;
+    top: calc(62vh - 1ex);
+    left: calc(50vw - calc(0.5 * 15ch));
     z-index: 100;
+
+    padding: 0.2ex 0.4ex 0.2ex 0.4ex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+
+    backdrop-filter: blur(10px) grayscale(50%) brightness(50%);
+
+    pointer-events: none;;
 }
+
+.HomepageSubtitle{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    color: ivory;
+    position: absolute;
+    top: calc(62vh + 4ex);
+    left: calc(50vw - calc(0.5 * 10ch));
+    z-index: 100;
+
+    padding: 0.2ex 0.4ex 0.2ex 0.4ex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+
+    backdrop-filter: blur(3px) grayscale(50%) brightness(50%);
+
+    pointer-events: none;;
+}
+
+
+
 .GitHubIcon {
     position: fixed;
     top: 1vmin;
@@ -69,10 +102,12 @@
     pointer-events: none;
     display: inline-block;
     font-family: monospace;
-    font-size: 5vw;
+    font-size: 4vw;
     color: bisque;
+    text-align: right;
+    text-decoration: underline;
     position: absolute;
-    top: 8vh;
+    top: 5.8vh;
     right: 5vw;
     z-index: 12;
 }
@@ -103,18 +138,19 @@
 
 .PhotographerBackground{
     clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
-    filter: grayscale(80%);
-    transition: 1s ease;
+    filter: blur(10px) ;
+    transition: 0.5s ease-in-out;
 }
 .PhotographerBackground:hover{
     clip-path: polygon(0 0, 60vw 0, 80vw 100vh, 0 100vh); 
     filter: none;
 }
 .ProgrammerBackground{
-    filter: grayscale(80%);
-    transition: 1s ease;
+    filter: blur(10px) saturate(80%);
+    transition: 0.5s ease;
 }
 .ProgrammerBackground:hover{
+    filter: blur(0) saturate(5000%);
     filter: none;
 }
 

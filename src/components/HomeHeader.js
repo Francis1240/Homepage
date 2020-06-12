@@ -11,11 +11,15 @@ const  HomeHeader = () => {
             <div className="HomeHeaderWrapper">
 
                 <div className="HomeButton">
-                    <Link to="/"><img src={HomeIcon} className="HomeButtonIcon" alt="Home Button."/></Link>
+                    <img src={HomeIcon} className="HomeButtonIcon" alt="Home Button."/>
                 </div>
-            
+
                 <p className="HomepageTitle">
                     Hello, I'm Yufan Ma. 
+                </p>
+                
+                <p className="HomepageSubtitle">
+                    Call me Francis.
                 </p>
                 
                 <a href="https://github.com/Francis1240/Homepage">

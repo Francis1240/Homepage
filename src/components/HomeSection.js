@@ -9,7 +9,7 @@ const HomeSection = (props) =>{
         if(props.name === 'Photographer'){
             return  <p className="PhotographerTitle">Photographer</p>
         }
-        return <p className="ProgrammerTitle">Programmer</p>;
+        return <p className="ProgrammerTitle">Software<br/>Development<br/>Engineer</p>;
     }
     
     const BGImg = (props) =>{
