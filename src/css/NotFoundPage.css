@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.NotFoundPageImage{
+    width: 100vw;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+}
+
+.NotFoundToHome{
+    position: fixed;
+    bottom: 8vh;
+    left:calc(50vw - 4ex);
+    font-size: 2vw;
+    z-index: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}

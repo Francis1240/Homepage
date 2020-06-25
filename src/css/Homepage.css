@@ -9,10 +9,9 @@
 
 
 .HomeButton {
-    pointer-events: none;;
     position: fixed;
-    top: 5vmin;
-    left: 5vmin;
+    top: 8vmin;
+    left: 8vmin;
     z-index: 100;
 }
 .HomeButtonIcon{
