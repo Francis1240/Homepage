@@ -4,7 +4,7 @@ import React from 'react';
 const ProgrammerPage = () =>{
     return (
         <>
-            <p>Programmer Page</p>
+            <p>Sorry, still working on it!</p>
         </>
     );
 }

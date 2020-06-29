@@ -1,10 +1,13 @@
 import React from 'react';
+import NavHeader from '../components/NavHeader';
 
 
 const PhotographerPage = () =>{
     return (
         <>
-            <p>PhotographerPage</p>
+            <p>Sorry! Still working on it...</p>
+            <NavHeader />
+
         </>
     );
 }
