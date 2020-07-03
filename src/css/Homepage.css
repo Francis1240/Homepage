@@ -102,6 +102,8 @@
 }
 
 .ProgrammerBackground{
+
+    pointer-events: auto;
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
@@ -125,7 +127,7 @@
 }
 
 .PhotographerBackground{
-    pointer-events: visible;
+    pointer-events: auto;
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
@@ -147,24 +149,35 @@
 }
 
 /* --- clip and animation --- */
+@media (hover:hover){
+    .PhotographerBackground{
+        clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
+        filter: blur(10px);
+        transition: 0.5s ease-in-out;
+    }
+    .PhotographerBackground:hover{
+        clip-path: polygon(0 0, 60vw 0, 80vw 100vh, 0 100vh); 
+        filter: none;
+    }
+    .ProgrammerBackground{
+        filter: blur(10px) saturate(80%);
+        transition: 0.5s ease;
+    }
+    .ProgrammerBackground:hover{
+        filter: none;
+    }
+    
+}
 
-.PhotographerBackground{
-    clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
-    filter: blur(10px);
-    transition: 0.5s ease-in-out;
-}
-.PhotographerBackground:hover{
-    clip-path: polygon(0 0, 60vw 0, 80vw 100vh, 0 100vh); 
-    filter: none;
-}
-.ProgrammerBackground{
-    filter: blur(10px) saturate(80%);
-    transition: 0.5s ease;
-}
-.ProgrammerBackground:hover{
-    filter: blur(0) saturate(5000%);
-    filter: none;
-}
 
+@media (hover:none){
+    .PhotographerBackground{
+        clip-path: polygon(0 0, 20vw 0, 40vw 100vh, 0 100vh); 
+        filter: none;
+    }
+    .ProgrammerBackground{
+        filter: none;
+    }
+}
 
 

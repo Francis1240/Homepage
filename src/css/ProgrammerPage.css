@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    overflow: auto;
+    margin: 0;
+}
+
+#ProgrammerPageBackground{
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    filter: grayscale(0.2);
+    z-index: 1;
+}
+#ProgrammerPageWrapper{
+    position: absolute;
+    left: max(calc(50vw - 800px), 10vw);
+    z-index: 2;
+    display: inline-block;
+    width: 1600px;
+    max-width: 80vw;
+    min-height: 100vh;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#header{
+    position: absolute;
+
+    z-index: 3;
+}
+#header-photo{
+    z-index: 4;
+    width: 300px;
+    height: auto;
+}

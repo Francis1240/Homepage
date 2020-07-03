@@ -23,7 +23,7 @@ const HomeSection = (props) =>{
             case "SDE":
                 return (
                     <Link to="/programmer">
-                        <img className="ProgrammerBackground" src={CodeImg} alt="A bunch of random code." />
+                        <img className="ProgrammerBackground" src={CodeImg} alt="A computer on the grass." />
                     </Link>
                 );
             default: 

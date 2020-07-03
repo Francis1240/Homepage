@@ -27,17 +27,17 @@ class HomePage extends React.Component {
         return (
         <>
             <HomeHeader />
-            <div className="HomepageSectionsWrapper">
-                <div className="HomepageProgrammerSection">
-                    <HomeSection  name="SDE"/>
+                <div className="HomepageSectionsWrapper">
+                    <div className="HomepageProgrammerSection">
+                        <HomeSection  name="SDE"/>
+                    </div>
+                    <div 
+                        ref={this.left} 
+                        className="HomepagePhotographerSection" 
+                    >
+                        <HomeSection  name="Photographer"/>
+                    </div>
                 </div>
-                <div 
-                    ref={this.left} 
-                    className="HomepagePhotographerSection" 
-                >
-                    <HomeSection  name="Photographer"/>
-                </div>
-            </div>
         </>
         );
     };

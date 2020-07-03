@@ -5,6 +5,7 @@ import PhotographerPage from './pages/photographerPage';
 import './css/App.css';
 import ProgrammerPage from './pages/ProgrammerPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ProgrammerAboutPage from './pages/ProgrammerAboutPage';
 
 
 
@@ -15,8 +16,9 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/photographer" component={PhotographerPage} />
-          <Route path='/programmer' component={ProgrammerPage} />
+          <Route exact path="/photographer" component={PhotographerPage} />
+          <Route exact path='/programmer' component={ProgrammerPage} />
+          <Route exact path='/programmer/about' component={ProgrammerAboutPage}/>
           <Route component={NotFoundPage} />
         </Switch>
       </Router>
