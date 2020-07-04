@@ -32,7 +32,7 @@ const ProgrammerPage = () =>{
                     </a>
                     <div className="section" id="about-me">
                         <h1>About Me</h1>
-                        <p>I am undergraduate Computer Science/Mathematics major at <a href="https://macalester.edu">Macalester College</a>, Saint Paul, Minnesota. <br/>
+                        <p>I am an undergraduate(2017-2021) Computer Science/Mathematics major at <a href="https://macalester.edu">Macalester College</a>, Saint Paul, Minnesota. <br/>
                         I am currently certified by AWS as a Professional DevOps Engineer.</p>
                         <a href="https://www.youracclaim.com/badges/94973b32-efaf-46e1-b723-c37de0b80de1/linked_in_profile">
                             <img className="logo-big" id="aws-badge" src={awsBadge} alt="AWS DevOps Certification Badge"/>
