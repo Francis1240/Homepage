@@ -19,11 +19,11 @@
 }
 .HomepageTitle{
     margin:0;
-    font-family: 'Passion One', cursive;
-    font-size: 4vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
     color: ivory;
     position: absolute;
-    top: calc(62vh - 1ex);
+    top: calc(50vh - 1ex);
     left: calc(50vw - calc(0.5 * 15ch));
     z-index: 100;
 
@@ -115,13 +115,12 @@
 .ProgrammerTitle{
     pointer-events: none;
     display: inline-block;
-    font-family: monospace;
-    font-size: 4vw;
-    color: bisque;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5vw;
+    color: white;
     text-align: right;
-    text-decoration: underline;
     position: absolute;
-    top: 5.8vh;
+    top: 6vh;
     right: 5vw;
     z-index: 12;
 }
@@ -139,8 +138,8 @@
 .PhotographerTitle{
     pointer-events: none;
     display: inline-block;
-    font-family: "Qwigley";
-    font-size: 7vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5vw;
     color: whitesmoke;
     position: absolute;
     bottom: 12vh;

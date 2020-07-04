@@ -5,7 +5,7 @@ import PhotographerPage from './pages/photographerPage';
 import './css/App.css';
 import ProgrammerPage from './pages/ProgrammerPage';
 import NotFoundPage from './pages/NotFoundPage';
-import ProgrammerAboutPage from './pages/ProgrammerAboutPage';
+import Mobile from './pages/mobile';
 
 
 
@@ -18,7 +18,7 @@ const App = () => {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/photographer" component={PhotographerPage} />
           <Route exact path='/programmer' component={ProgrammerPage} />
-          <Route exact path='/programmer/about' component={ProgrammerAboutPage}/>
+          <Route exact path="/mobile" component={Mobile}/>
           <Route component={NotFoundPage} />
         </Switch>
       </Router>

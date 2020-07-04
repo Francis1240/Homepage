@@ -16,9 +16,6 @@ const  HomeHeader = () => {
                     Hello, I'm Yufan Ma. 
                 </p>
                 
-                <p className="HomepageSubtitle">
-                    Call me Francis.
-                </p>
                 
                 <a href="https://github.com/Francis1240/Homepage">
                     <div>
