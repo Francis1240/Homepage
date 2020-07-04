@@ -7,7 +7,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 #programmer-page-background{
     z-index: -100;
     position: fixed;
@@ -16,6 +15,12 @@
     width: 100vw;
 }
 
+hr{
+    margin: 10px 0 2px 0;
+    width: 50%;
+    align-self: center;
+    border-bottom: 1px solid black;
+}
 #home{
     transform: rotate(90deg);
     width: 80px;
@@ -36,7 +41,8 @@
 }
 
 #header{
-    width: 20vw;
+    font-size: 15pt;
+    width: 25vw;
     padding: 20px 15px 20px 15px;
     background-color: rgba(0, 0, 0, 0.151);
     position: absolute;
@@ -44,7 +50,7 @@
     top: 40vh;
 }
 
-#header + a img{
+#down-arrow{
     width: 200px;
     height: 100px;
     position: absolute;
@@ -53,24 +59,97 @@
     left: calc(50vw - 100px);
     transition: 0.3s ease-in-out;
 }
-#header + a img:hover{
+#down-arrow:hover{
     filter: none;
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgb(58, 58, 58);
     border-style: solid;
     border-width: 3px;
 }
+.section{
+    width: 100vw;
+    padding: 30px calc(50vw - 400px) 50px calc(50vw - 400px);
+    position: absolute;
+    left: 0;
+}
 
 #about-me{
     color: #f8f9fe;
-    width: 100vw;
-    height: 450px;
+    height: 380px;
     background-color: #334A59;
-    position: absolute;
     top: 100vh;
-    left: 0;
-    padding: 50px calc(50vw - 400px) 50px calc(50vw - 400px);
 }
-#about-me h{
-    font-size: 20pt;
+#about-me h1{
+    display: inline-block;
+    position: absolute;
+    left: calc(50vw - 500px);
+    top: 40px;
+    font-size: 25pt;
+}
+#about-me p{
+    font-size: 14pt;
+    padding: 0 100px 0 100px;
+}
+#about-me p a{
+    text-decoration: underline;
+    color: inherit;
+}
+#aws-badge{
+    position: relative;
+    top: 35px;
+    left: 100px;
+}
+#macalester-logo{
+    position: relative;
+    top: 35px;
+    left: 250px;
+}
+
+.logo-big{
+    width: 200px;
+    filter: drop-shadow(0 0 7.5px  rgb(0, 0, 0));
+    transition: 0.3s ease;
+}
+.logo-big:hover{
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+}
+
+
+
+#linkedIn-logo{
+    width: 50px;
+    position: relative;
+    top: -150px;
+    left: -380px;
+    filter: brightness(0) invert(1);
+
+}
+
+
+#mail-logo{
+    width: 50px;
+    position: relative;
+    top: -153px;
+    left: -500px;
+    filter: brightness(0) invert(1);
+
+}
+
+#email-address{
+    color: #f8f9fe;
+    text-decoration: underline;
+    position: absolute;
+    left: calc(50vw - 650px);
+    top: 170px;
+}
+
+
+
+
+#experience{
+    background-color: #f8f9fe;
+    top: calc(100vh + 380px);
+}
+#experience hr{
+    margin-bottom: 50px;
 }
