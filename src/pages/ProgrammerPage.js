@@ -138,7 +138,7 @@ const ProgrammerPage = () =>{
                                         No testing/staging before deployment.
                                     </li>
                                     <li>
-                                        Down-time not allowed. Single instance, no backup/snapshot.
+                                        Down-time not allowed. Single instance, no backup/snapshot. RPO = 0; RTO = \infty.
                                     </li>
                                     <li>
                                         Version 1.0 artifacts are built and ready to be deployed. 
