@@ -117,10 +117,31 @@ const ProgrammerPage = () =>{
                                 <h4>September 2019 - December 2019 </h4>
                                 <ul className="project-details-list">
                                     <li>
-                                        Task-tracker created specifically for the Optional Practical Training(OPT) application process for international students in t he U.S. 
+                                        Task-tracker created specifically for the Optional Practical Training(OPT) application process for international students in the U.S. 
                                     </li>
                                     <li>
                                         Demo created using React library. 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="project">
+                                <h2>Life</h2>
+                                <h4>September 1998 - Now</h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Hardest and most complicated project ever. No documentation at all.
+                                    </li>
+                                    <li>
+                                        Very expensive for the project supervisors(my parents), until production(college graduation.)
+                                    </li>
+                                    <li>
+                                        No testing/staging before deployment.
+                                    </li>
+                                    <li>
+                                        Down-time not allowed. Single instance, no backup/snapshot.
+                                    </li>
+                                    <li>
+                                        Version 1.0 artifacts are built and ready to be deployed. 
                                     </li>
                                 </ul>
                             </li>
