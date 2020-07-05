@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     overflow-y: auto;
@@ -8,11 +9,13 @@
     scroll-behavior: smooth;
 }
 #programmer-page-background{
+    height: 100vh;
     z-index: -100;
     position: fixed;
-    top:-8vw;
-    left:0;
-    width: 100vw;
+    bottom: 0;
+    right:0;
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1),rgba(0,0,0,1));
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1),rgba(0,0,0,1));
 }
 
 hr{
@@ -146,10 +149,10 @@ hr{
 
 
 
-#experience{
+#projects{
     background-color: #f8f9fe;
     top: calc(100vh + 380px);
 }
-#experience hr{
+#projects hr{
     margin-bottom: 50px;
 }

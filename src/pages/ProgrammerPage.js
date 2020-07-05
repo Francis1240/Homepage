@@ -48,10 +48,12 @@ const ProgrammerPage = () =>{
                             <p id="email-address">contactme@yufanma.com</p>
                         </a>
                     </div>
-                    <div className="section" id="experience">
+                    <div className="section" id="projects">
                         <div id="experience-header">
-                            <h1>My Experience</h1>
+                            <h1>Projects</h1>
                             <hr/>
+                            
+                            
 
                             <p>Under Construction</p>
 
