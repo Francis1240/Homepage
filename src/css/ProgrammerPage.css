@@ -8,6 +8,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 #programmer-page-background{
     height: 100vh;
     z-index: -100;
@@ -24,6 +25,7 @@ hr{
     align-self: center;
     border-bottom: 1px solid black;
 }
+
 #home{
     transform: rotate(90deg);
     width: 80px;
@@ -35,8 +37,9 @@ hr{
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
+
 #home:hover{
     background-color: rgba(0, 0, 0, 0.2);
     border-width: 3px;
@@ -60,8 +63,9 @@ hr{
     top: calc(100vh - 110px);
     filter: invert(0.5);
     left: calc(50vw - 100px);
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
+
 #down-arrow:hover{
     filter: none;
     background-color: rgba(0, 0, 0, 0.2);
@@ -69,10 +73,11 @@ hr{
     border-style: solid;
     border-width: 3px;
 }
+
 .section{
     width: 100vw;
     padding: 30px calc(50vw - 400px) 50px calc(50vw - 400px);
-    position: absolute;
+    position: relative;
     left: 0;
 }
 
@@ -80,8 +85,8 @@ hr{
     color: #f8f9fe;
     height: 380px;
     background-color: #334A59;
-    top: 100vh;
 }
+
 #about-me h1{
     display: inline-block;
     position: absolute;
@@ -89,19 +94,23 @@ hr{
     top: 40px;
     font-size: 25pt;
 }
+
 #about-me p{
     font-size: 14pt;
     padding: 0 100px 0 100px;
 }
+
 #about-me p a{
     text-decoration: underline;
     color: inherit;
 }
+
 #aws-badge{
     position: relative;
     top: 35px;
     left: 100px;
 }
+
 #macalester-logo{
     position: relative;
     top: 35px;
@@ -113,29 +122,31 @@ hr{
     filter: drop-shadow(0 0 7.5px  rgb(0, 0, 0));
     transition: 0.3s ease;
 }
+
 .logo-big:hover{
     filter: drop-shadow(0 0 3px rgb(255, 255, 255));
 }
 
-
-
 #linkedIn-logo{
     width: 50px;
     position: relative;
-    top: -150px;
+    top: -180px;
     left: -380px;
     filter: brightness(0) invert(1);
 
 }
 
-
 #mail-logo{
     width: 50px;
     position: relative;
-    top: -153px;
+    top: -183px;
     left: -500px;
     filter: brightness(0) invert(1);
 
+}
+
+#mail-logo + p{
+    text-decoration: none;
 }
 
 #email-address{
@@ -146,13 +157,65 @@ hr{
     top: 170px;
 }
 
-
-
-
 #projects{
     background-color: #f8f9fe;
-    top: calc(100vh + 380px);
 }
+
+#experience-header h1{
+    font-size: 35pt;
+}
+
 #projects hr{
     margin-bottom: 50px;
+}
+
+
+.project{
+    margin: 20px 0 20px 0;
+}
+
+.project h2{
+    font-size: 25pt;
+    color: black;
+    font-weight: 800;
+
+}
+
+.project h3{
+    font-size: 16pt;
+    color: gray;
+}
+
+.project h4{
+    font-family: cursive;
+    font-size: 16pt;
+    color: gray;
+    position: relative;
+}
+
+ul.project-details-list{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 10px 0 100px 0;
+}
+
+ul.project-details-list li{
+    font-size: 14pt;
+}
+
+ul.project-details-list li a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+#other-info{
+    background-color: #96777C;
+}
+
+#other-info p{
+}
+
+#other-info p a{
+    text-decoration: underline;
+    color: inherit;
 }

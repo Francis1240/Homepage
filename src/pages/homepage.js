@@ -27,17 +27,21 @@ class HomePage extends React.Component {
         return (
         <>
             <HomeHeader />
-                <div className="HomepageSectionsWrapper">
-                    <div className="HomepageProgrammerSection">
-                        <HomeSection  name="SDE"/>
-                    </div>
-                    <div 
-                        ref={this.left} 
-                        className="HomepagePhotographerSection" 
-                    >
-                        <HomeSection  name="Photographer"/>
-                    </div>
+            <div className="HomepageSectionsWrapper">
+                <div className="HomepageProgrammerSection">
+                    <HomeSection  name="SDE"/>
                 </div>
+                <div 
+                    ref={this.left} 
+                    className="HomepagePhotographerSection" 
+                >
+                    <HomeSection  name="Photographer"/>
+                </div>
+            </div>
+            <div id="tou">
+                <h6>Terms of Use</h6>
+                <p> All the media(including but not limited to: images, texts, videos) in this website (including its subdomains) must not be copied and used elsewhere without the consent from the owner. </p>
+            </div>
         </>
         );
     };

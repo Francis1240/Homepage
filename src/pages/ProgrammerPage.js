@@ -12,7 +12,7 @@ import mailLogo from "../res/img/mail-icon.png";
 const ProgrammerPage = () =>{
     return (
         <>  
-            <div style={{positon:"fixed", pointerEvents:"all", width:"100vw", height: "100vh"}}></div>
+            <div style={{positon:"fixed", pointerEvents:"none", width:"100vw", height: "100vh"}}></div>
             <img id="programmer-page-background" src={myPhoto} alt="Background"/>
             
             <Link to="/">
@@ -32,8 +32,8 @@ const ProgrammerPage = () =>{
                     </a>
                     <div className="section" id="about-me">
                         <h1>About Me</h1>
-                        <p>I am an undergraduate(2017-2021) Computer Science/Mathematics major at <a href="https://macalester.edu">Macalester College</a>, Saint Paul, Minnesota. <br/>
-                        I am currently certified by AWS as a Professional DevOps Engineer.</p>
+                        <p>I am an undergraduate(2017-2021) Computer Science/Mathematics major at Macalester College, Saint Paul, Minnesota. <br/>
+                        In July 2020, I obtained Amazon Web Services Professional DevOps Engineer Certification.</p>
                         <a href="https://www.youracclaim.com/badges/94973b32-efaf-46e1-b723-c37de0b80de1/linked_in_profile">
                             <img className="logo-big" id="aws-badge" src={awsBadge} alt="AWS DevOps Certification Badge"/>
                         </a>
@@ -50,17 +50,84 @@ const ProgrammerPage = () =>{
                     </div>
                     <div className="section" id="projects">
                         <div id="experience-header">
-                            <h1>Projects</h1>
+                            <h1>Projects and Work Experiences</h1>
                             <hr/>
-                            
-                            
-
-                            <p>Under Construction</p>
 
                         </div>
+                        <ul id="project-list">
+                            <li className="project">
+                                <h2><a style={{ color:"black"}} href="https://github.com/Francis1240/blockly">Software Development Research Internship</a></h2>
+                                <h3>Google</h3>
+                                <h4>May 2019 - August 2019</h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Developed an experimental version of Blockly, a pure-JS library that represents code as interlocking blocks, 
+                                        which is widely used in all "Code with Google" programs. 
+                                    </li>
+                                    <li>
+                                        Worked closely with the Blockly team at Google in a program hosted by Professor Lauren Milne @ Macalester College 
+                                        to integrate accessibility features into the existing JavaScript code that generates the UI, making Blockly compatible with screen readers. 
+                                    </li>
+                                    <li>
+                                        Implemented and tested rendering optimization and code simplification. 
+                                    </li>
+                                    <li>
+                                        Published the resulting paper <a href="https://doi.org/10.1145/3308561.3354589">"Making the Blockly Library Accessible via Touchscreen"</a> on Association for Computing Machinery(ACM) 2019. 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="project">
+                                <h2>Teaching Assistant for Algorithms Design and Analysis</h2>
+                                <h3>Macalester College</h3>
+                                <h4>September 2018 - May 2019</h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Helping professors design lectures and homework.
+                                    </li>
+                                    <li>
+                                        Hosting office hours where I help students who have difficulties understanding the class or lectures to share more about algorithms to interested students. 
+                                    </li>
+                                    <li>
+                                        Contents include: dynamic programming, Dijkstra's, b-tree, etc 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="project">
+                                <h2><a style={{color:"black"}} href="https://github.com/Francis1240/WatchDog">WatchDog Project</a></h2>
+                                <h3>Are you safe here? - World's first mobile safety-risk monitor. (Full Stack) </h3>
+                                <h4>December 2018 - September 2019</h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Using public historical crime data, I developed this app to calculate safety risks for t he current location of the user, with risk-factors like time of the day, weather and season taken into consideration. 
+                                    </li>
+                                    <li>
+                                        <b>Front-End</b>: I developed a cross-platform mobile interface using React Native, which will send notifications when one of the factors becomes significant. The interface itself also shows the current values, together with a map to show the location of t he incidents.  
+                                    </li>
+                                    <li>
+                                        <b>Back-End</b>: Java and Go are used to read and analyze the data, then calculate the individual ratings.  
+                                    </li>
+                                    <li>
+                                        <b>Database</b>: The historical crime data is stored locally and is accessed using MySQL/ MongoDB.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="project">
+                                <h2><a style={{color:"black"}} href="https://francisv6.wixsite.com/visa-vis">Visa-vis Project</a></h2>
+                                <h3>Task-tracker designed for OPT application</h3>
+                                <h4>September 2019 - December 2019 </h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Task-tracker created specifically for the Optional Practical Training(OPT) application process for international students in t he U.S. 
+                                    </li>
+                                    <li>
+                                        Demo created using React library. 
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="section" id="contact">
-
+                    <div className="section" id="other-info">
+                        <p>I spend my free time <Link to="/photographer">taking pictures</Link>, skiing and sometimes skydiving. And I LOVE cooking Chinese food(authentic, of course.) </p>
                     </div>
                 </div>
             </div>
