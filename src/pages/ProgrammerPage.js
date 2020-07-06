@@ -148,7 +148,8 @@ const ProgrammerPage = () =>{
                         </ul>
                     </div>
                     <div className="section" id="other-info">
-                        <p>I spend my free time <Link to="/photographer">taking pictures</Link>, skiing and sometimes skydiving. And I LOVE cooking Chinese food(authentic, of course.) </p>
+                        <p>I spend my free time skiing, cooking Chinese food(authentic, of course) and sometimes skydiving. </p>
+                        <p>And I'm a <Link to="/photographer" style={{textDecoration:"underline", color:"inherit"}}>photographer</Link>.</p>
                     </div>
                 </div>
             </div>
