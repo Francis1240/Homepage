@@ -5,6 +5,7 @@ import Img2 from '../res/img/Photos/2.JPG';
 import Img4 from '../res/img/Photos/4.JPG';
 import Img5 from '../res/img/Photos/5.JPG';
 import Img6 from '../res/img/Photos/6.JPG';
+import Img7 from '../res/img/Photos/7.JPG';
 import Ins from '../res/img/Instagram.png';
 import '../css/PhotographerPage.css';
 import Mail from "../res/img/mail-icon.png";
@@ -27,23 +28,26 @@ const PhotographerPage = () =>{
                 </div>
             </div>
             <div id="pictures">
-                <div id="i0">
+                <div>
                     <img src={Img0} alt="Sunset at Bde Maka Ska"/>
                 </div>
-                <div id="i1">
-                    <img src={Img1} alt="Sunset at Bde Maka Ska"/>
+                <div>
+                    <img src={Img1} alt="Sunset in Saint Paul"/>
                 </div>
-                <div id="i6">
-                    <img src={Img6} alt="Sunset at Bde Maka Ska"/>
+                <div>
+                    <img src={Img7} alt="Clouds over the Mississippi in Saint Paul"/>
                 </div>
-                <div id="i2">
-                    <img src={Img2} alt="Sunset at Bde Maka Ska"/>
+                <div>
+                    <img src={Img6} alt="Another Sunset in Saint Paul"/>
                 </div>
-                <div id="i5">
-                    <img src={Img5} alt="Sunset at Bde Maka Ska"/>
+                <div>
+                    <img src={Img2} alt="Another Sunset at Bde Maka Ska"/>
                 </div>
-                <div id="i4">
-                    <img src={Img4} alt="Sunset at Bde Maka Ska"/>
+                <div>
+                    <img src={Img5} alt="Sunrise in Saint Paul"/>
+                </div>
+                <div>
+                    <img src={Img4} alt="Stars at Rice Lake"/>
                 </div>
             </div>
 
