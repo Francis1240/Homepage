@@ -21,7 +21,10 @@ const PhotographerPage = () =>{
                 <Link to="/">
                     <img id="home" src={downArrow} alt="Go back to home page"/>
                 </Link>
-                <p>Francis Ma</p>
+                <Link to="/programmer">
+                    <p id="to-programmer-page">Looking for a Software Development?</p>
+                </Link>
+                <p id="photographer-title">Francis Ma</p>
                 <div>
                     <a href="mailto:contactme@yufanma.com"><img src={Mail} alt="Contact me"/></a>
                     <a href="https://www.instagram.com/francis___ma/"><img src={Ins} alt="Instagram"/></a>

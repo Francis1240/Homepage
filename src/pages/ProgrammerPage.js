@@ -77,6 +77,18 @@ const ProgrammerPage = () =>{
                                 </ul>
                             </li>
                             <li className="project">
+                                <h2><a style={{ color:"black"}}>Founder and Organizer of Google Cloud Training Program @ Macalester</a></h2>
+                                <h4>June 2020 - August 2020 (ongoing)</h4>
+                                <ul className="project-details-list">
+                                    <li>
+                                        Designed and hosted an extracurricular summer program tailored to address the lack of practical experience of Computer Science majors at liberal arts colleges.
+                                    </li>
+                                    <li>
+                                        Guided dozens of students through two months of hands-on experiential learning and guided the build and deployment of applications using Google Cloud.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="project">
                                 <h2>Teaching Assistant for Algorithms Design and Analysis</h2>
                                 <h3>Macalester College</h3>
                                 <h4>September 2018 - May 2019</h4>
@@ -98,7 +110,7 @@ const ProgrammerPage = () =>{
                                 <h4>December 2018 - September 2019</h4>
                                 <ul className="project-details-list">
                                     <li>
-                                        Using public historical crime data, I developed this app to calculate safety risks for t he current location of the user, with risk-factors like time of the day, weather and season taken into consideration. 
+                                        Using public historical crime data, I developed this app to calculate safety risks for the current location of the user, with risk-factors like time of the day, weather and season taken into consideration. 
                                     </li>
                                     <li>
                                         <b>Front-End</b>: I developed a cross-platform mobile interface using React Native, which will send notifications when one of the factors becomes significant. The interface itself also shows the current values, together with a map to show the location of t he incidents.  
