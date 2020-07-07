@@ -22,7 +22,7 @@ const PhotographerPage = () =>{
                     <img id="home" src={downArrow} alt="Go back to home page"/>
                 </Link>
                 <Link to="/programmer">
-                    <p id="to-programmer-page">Looking for a Software Development?</p>
+                    <p id="to-programmer-page">Looking for a Software Development Engineer?</p>
                 </Link>
                 <p id="photographer-title">Francis Ma</p>
                 <div>
