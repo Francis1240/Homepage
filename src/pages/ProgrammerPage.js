@@ -32,8 +32,7 @@ const ProgrammerPage = () =>{
                     </a>
                     <div className="section" id="about-me">
                         <h1>About Me</h1>
-                        <p>I am an undergraduate(2017-2021) Computer Science/Mathematics major at Macalester College, Saint Paul, Minnesota. <br/>
-                        In July 2020, I obtained Amazon Web Services Professional DevOps Engineer Certification.</p>
+                        <p>I am an undergraduate(2017-2021) Computer Science/Mathematics major student at Macalester College, Saint Paul, Minnesota.<br/> I am experienced in Web/Mobile Development, Cloud Architecture and Algorithms Optimization.</p>
                         <a href="https://www.youracclaim.com/badges/94973b32-efaf-46e1-b723-c37de0b80de1/linked_in_profile">
                             <img className="logo-big" id="aws-badge" src={awsBadge} alt="AWS DevOps Certification Badge"/>
                         </a>
@@ -77,7 +76,7 @@ const ProgrammerPage = () =>{
                                 </ul>
                             </li>
                             <li className="project">
-                                <h2><a style={{ color:"black"}}>Founder and Organizer of Google Cloud Training Program @ Macalester</a></h2>
+                                <h2><a href style={{ color:"black"}}>Founder and Organizer of Google Cloud Training Program @ Macalester</a></h2>
                                 <h4>June 2020 - August 2020 (ongoing)</h4>
                                 <ul className="project-details-list">
                                     <li>
