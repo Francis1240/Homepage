@@ -6,6 +6,7 @@ import './css/App.css';
 import ProgrammerPage from './pages/ProgrammerPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Mobile from './pages/mobile';
+import NetSci from './pages/netsci';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact path="/photographer" component={PhotographerPage} />
           <Route exact path='/programmer' component={ProgrammerPage} />
           <Route exact path="/mobile" component={Mobile}/>
+          <Route exact path="/netsci" component={NetSci}/>
           <Route component={NotFoundPage} />
         </Switch>
       </Router>
