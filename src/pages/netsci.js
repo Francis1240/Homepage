@@ -32,7 +32,7 @@ const NetSci = () =>{
     return (
         <>
             <SideNav />
-            <div id="wrapper">
+            <div id="netsci-wrapper">
                 <h1 id="title">
                     Use networks to analyze the Chinese language
                 </h1>
