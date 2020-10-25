@@ -17,11 +17,10 @@ const SideNav = () => {
                 <li><a href="#title">Top</a></li>
                 <li><a href="#bg">Background</a></li>
                 <li><a href="#procedure">Procedure</a></li>
-                <li><a href="#analysis">Analysis</a>
-                <ul>
-                    <li><a href="#bg">Background</a></li>
-                </ul>
-                </li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li className="tabbed"><a href="#hub">Hubs</a></li>
+                <li className="tabbed"><a href="#mod">Modularity classes</a></li>
+                <li><a href="#fut">Future work</a></li>
             </ul>
         </>
     )
@@ -52,15 +51,11 @@ const NetSci = () =>{
                 The goal is to generate networks that will give us insights into the underlying structures of the language and how people understand sentences in context. Network properties like Hub Scores and Modularity Classes are examined. 
                 </p>
 
-                <hr/>
-
                 <p>
                 Due to the relatively small size of the project and difficulties gathering larger sets of data, I choose to focus on a specific piece of text: 
-                    <b>
-                        <a href="https://www.fmprc.gov.cn/web/fyrbt_673021/" target="_blank" rel="noopener noreferrer">
-                        the scripts from the Chinese Department of Foreign Affairs spokesperson, Oct. 16th to 19th.                         
-                        </a>
-                    </b> 
+                <a className="out-link" href="https://www.fmprc.gov.cn/web/fyrbt_673021/" target="_blank" rel="noopener noreferrer">
+                the scripts from the Chinese Department of Foreign Affairs spokesperson, Oct. 16th to 19th.                         
+                </a>
                 </p>
 
                 <p>
@@ -79,9 +74,9 @@ const NetSci = () =>{
                 Typoglycemia is a portmanteau of "typo" and "hypoglycemia", which refers to the phenomenon when people can understand a sentence even if the letters are scrambled. Here is an example in English, which is an internet meme circulating around 2003:
                 </p>
 
-                <p><b>
+                <p className="quote">
                     Aoccrding to a rsceearch at Cmabrigde Uinervtisy, it deosn’t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.
-                </b></p>
+                </p>
 
                 <p>
                 What happened is more complicated than the meme. We do not read the text as sequences of letters, but neither do we see them as simply unordered sets of characters. The reality lies somewhere in between. To better understand it, I constructed two networks to analyze both approaches. 
@@ -139,7 +134,7 @@ const NetSci = () =>{
                 Their degree distributions, as we can see here, fit power-law pretty well, especially for the sequential network. Even though the total number of degrees is much smaller compared with the sentence network, the sequential network fits Power Law even better. This can be seen as a result of how they are built: the sentence network is essentially a combination of different complete graphs, and its size and completeness very much depend on how we split the text into sentences, which is rather difficult to do, consider the existence of commas and the fact that the text I chose was speaking scripts, not written statements. The sequential network, on the other hand, is built intuitively. Nevertheless, the fact that the sequential network fits Power Law so well, even with this rather small sample size(~1000 vertices) is convincing evidence that our approach has its significance: the language does have a remarkable level of “networkness” to it.
                 </p>
 
-                <h4>
+                <h4 id="hub">
                     Hubs in the sequential network
                 </h4>
 
@@ -155,7 +150,7 @@ const NetSci = () =>{
                 Note that I refrained from using measures like closeness centrality or betweenness centrality because, in this sequential network, they don’t carry the meanings we would expect: two sentences could be “connected” in the graph by having the same character at the end of one sentence and the beginning of the other, forming a long path in the network but the long sentence itself can have no meaning whatsoever. Randomly walking in the network rarely gives us meaningful sentences, therefore the centrality measures that rely on these “random walks”, like betweenness centrality, don't help with our analysis. This shows that the language is more than just these two networks(of course), but since this was never supposed to be an accurate representation of natural language processing but rather a gross approximation, I will stick with the networks for now.
                 </p>
 
-                <h4>
+                <h4 id="mod">
                 Modularity classes in sentence network
                 </h4>
 
@@ -195,6 +190,10 @@ const NetSci = () =>{
                 </p>
 
                 <hr/>
+
+                <h3 id="fut">
+                    Future work & more
+                </h3>
 
                 <p>This is, like I said, just the first step. Of course, both networks have their flaws and inherent weaknesses, which is why I chose to construct both of them. I believe that a fairly accurate approximation of how the Chinese language is understood can be obtained from combining the two models in some way, but that is going far beyond the scope of network science into machine learning and AI.</p>
 
