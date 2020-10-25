@@ -21,6 +21,8 @@ const SideNav = () => {
                 <li className="tabbed"><a href="#hub">Hubs</a></li>
                 <li className="tabbed"><a href="#mod">Modularity classes</a></li>
                 <li><a href="#fut">Future work</a></li>
+                <li><a className="out-link" href="https://github.com/Francis1240/NetSciCapstone">Link to Code</a></li>
+                
             </ul>
         </>
     )
@@ -52,7 +54,7 @@ const NetSci = () =>{
                 </p>
 
                 <p>
-                Due to the relatively small size of the project and difficulties gathering larger sets of data, I choose to focus on a specific piece of text: 
+                Due to the relatively small size of the project and difficulties gathering larger sets of data, I choose to focus on a specific piece of text: &nbsp; 
                 <a className="out-link" href="https://www.fmprc.gov.cn/web/fyrbt_673021/" target="_blank" rel="noopener noreferrer">
                 the scripts from the Chinese Department of Foreign Affairs spokesperson, Oct. 16th to 19th.                         
                 </a>
@@ -112,7 +114,7 @@ const NetSci = () =>{
                 After the networks are created, they are imported to Gephi for more detailed analysis and network measures calculations.
                 </p>
                 <p>
-                Here are the two networks in Gephi:
+                Here are the two networks in Gephi: (Right-click and open in new tab to view full size.)
                 </p>
 
                 <ul className="graphs-wrapper">
@@ -158,7 +160,7 @@ const NetSci = () =>{
                 Now let’s take a look at the sentence network. Like I mentioned before, the sentence network treats the sentences as sets of characters, completely ignoring the internal ordering of sentences. Therefore, it is intuitive to look at the modularity classes, which are also “sets of vertices''. If some characters often appear in the same sentence, readers may unconsciously connect them in some way. This connection can carry significant importance in the Chinese context since often characters have inherent “meanings'' to them. By splitting the network into modularity classes, I intend to confirm that these connections actually exist, and the characters that appear in the same modularity class are indeed related to each other in some way.
                 </p>
 
-                <p>I was able to get 6 modularity classes out of the network using a resolution of 1.05. Here are the modularity classes.</p>
+                <p>I was able to get 6 modularity classes out of the network using a resolution of 1.05. Here are the modularity classes. (Left to right, top to bottom: 1, 2, 3, 4, 5, 6)</p>
 
                 <ul className="graphs-wrapper">
                     <li><img src={M1} alt="Sentence network modularity class 1"/></li>
@@ -186,7 +188,7 @@ const NetSci = () =>{
                 </p>
 
                 <p>
-                By looking at the modularity classes, I believe that these sets of characters play a big role in how people understand a sentence. They help set a tone before the reader traverses through the sentence character by character, and guide the reader towards a certain direction. To some degree, people are reading the characters as sets, rather than arrays.
+                By looking at the modularity classes, I noticed that these sets of characters play a big role in how people understand a sentence. They help set a tone before the reader traverses through the sentence character by character, and guide the reader towards a certain direction. To some degree, people are reading the characters as sets, rather than arrays.
                 </p>
 
                 <hr/>
