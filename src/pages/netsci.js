@@ -102,11 +102,11 @@ const NetSci = () =>{
                 The two networks are both built out of the 4 scripts I gathered, utilizing the Python library Networkx. For both networks, the characters are represented as vertices. 
                 </p>
 
-                <p>
+                <p className="important">
                 In the first network, the scripts are split into sentences, and each sentence is then treated as a sequence of characters. The next step is to traverse through the sequence and add directed edges to the network that connect adjacent vertices according to their orders in the sentences. Multiple instances of the same edge are counted via weighting the edges. This simulates reading through the sentences letter-by-letter. The resulting network has 1146 vertices and 5512 edges. 
                 </p>
 
-                <p>
+                <p className="important">
                 In the second one, instead of only connecting adjacent characters, all characters in the same sentence are connected. This simulates reading the sentence as a whole, which of course leads to a much larger network with 49223 edges. 
                 </p>
 
@@ -133,14 +133,17 @@ const NetSci = () =>{
                 </ul>
 
                 <p>
-                Their degree distributions, as we can see here, fit power-law pretty well, especially for the sequential network. Even though the total number of degrees is much smaller compared with the sentence network, the sequential network fits Power Law even better. This can be seen as a result of how they are built: the sentence network is essentially a combination of different complete graphs, and its size and completeness very much depend on how we split the text into sentences, which is rather difficult to do, consider the existence of commas and the fact that the text I chose was speaking scripts, not written statements. The sequential network, on the other hand, is built intuitively. Nevertheless, the fact that the sequential network fits Power Law so well, even with this rather small sample size(~1000 vertices) is convincing evidence that our approach has its significance: the language does have a remarkable level of “networkness” to it.
+                Their degree distributions, as we can see here, fit power-law pretty well, especially for the sequential network. Even though the total number of degrees is much smaller compared with the sentence network, the sequential network fits Power Law even better. This can be seen as a result of how they are built: the sentence network is essentially a combination of different complete graphs, and its size and completeness very much depend on how we split the text into sentences, which is rather difficult to do, consider the existence of commas and the fact that the text I chose was speaking scripts, not written statements. The sequential network, on the other hand, is built intuitively.
+                </p>
+                <p className="important">
+                The fact that the sequential network fits Power Law so well, even with this rather small sample size(~1000 vertices) is convincing evidence that our approach has its significance: the language does have a remarkable level of “networkness” to it.
                 </p>
 
                 <h4 id="hub">
                     Hubs in the sequential network
                 </h4>
 
-                <p>
+                <p className="important">
                 Now that the sample networks are constructed, we can start looking at the network measures and what they reflect. Let’s take a look at the hub nodes in the sequential network. Some of the biggest hubs are the most commonly used grammatical particles. After all, their job is to connect other characters, so it should not come as a surprise that they have high hub scores. These particles also have a relatively big influence on how well people can understand a scrambled sentence since if we shuffle their orders a lot, the sentence becomes way harder to understand.
                 </p>
 
@@ -187,7 +190,7 @@ const NetSci = () =>{
                 Moreover, in Class 5, I found words like Fukushima, Nuclear waste, Deforestation, Chemicals, WHO, and Viruses. Because a huge part of the international conversations these days are about the environment and public health, it is fascinating that all the words related can be found in one single rather small community.
                 </p>
 
-                <p>
+                <p className="important">
                 By looking at the modularity classes, I noticed that these sets of characters play a big role in how people understand a sentence. They help set a tone before the reader traverses through the sentence character by character, and guide the reader towards a certain direction. To some degree, people are reading the characters as sets, rather than arrays.
                 </p>
 
